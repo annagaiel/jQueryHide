@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+     <form name='demo_form'>
+     First name: <input type="text" name="fname"><br>
+     Last name: <input type="text" name="lname"><br>
+     <input type="submit" value="Submit">
+     </form>
+     <br>
+     <input type="button" id="hide" name="name" value="Hide Form Inputs">
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $("form > input").hide();
+      });
+    });
+  </script>
+</html>
